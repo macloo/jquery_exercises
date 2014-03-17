@@ -1,0 +1,46 @@
+/* CSS styles for the jQuery exercise */
+
+h1, h2, p {
+	margin-left: 40px;
+	}
+
+p {
+	margin-bottom: 0;
+	padding: 20px;
+	}
+
+h2 {
+	width: 30%;
+	padding: 3px 15px;
+	background: #333;
+	color: #fff;
+	font-family: Verdana, sans-serif;
+	font-weight: normal;
+	font-size: 150%;
+	border-bottom: 2px solid #fff;
+	}
+
+.one   { background: #ffbaa3; }
+.two   { background: #ffe9ad; }
+.three { background: #ca6996; }
+.four  { background: #239d9a; }
+
+#buttons {
+	margin: 0 0 20px 20px;
+	}
+
+button {
+	font-family: Verdana, sans-serif;
+	padding: 10px;
+	}
+
+.panel {
+	width: 20%;
+	margin-left: 20px;
+	padding: 10px 15px;
+	float: left;
+	}
+
+.box {
+	width: 30%;
+	}

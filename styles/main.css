@@ -1,0 +1,71 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 100%;
+	color: #000;
+	background: #fff;
+}
+#wrapper {
+	margin: 20px auto;
+	width: 80%;
+	background: #cfebca;
+	padding-bottom: 30px;
+}
+h1, h2 {
+	font-family: Cambria, Georgia, serif;
+	font-size: 200%;
+	font-weight: normal;
+	line-height: 1.5em;
+	padding: 20px;
+}
+h2 {
+	font-size: 150%;
+	font-weight: bold;
+}
+p {
+	margin-bottom: 20px;
+	padding: 0 20px;
+	line-height: 1.4em;
+}
+.clearfloats {
+	clear: both;
+}
+
+/* lists */
+
+ul, ol {
+	margin-left: 40px;
+}
+li {
+	line-height: 1.4em;
+}
+.filelist {
+	float: right;
+	padding: 20px 20px;
+	margin: -60px 30px 10px 20px;
+	background: #f7dcea;
+	min-width: 100px;
+}
+.filelist li {
+	margin-left: 20px;
+}
+
+/* links */
+
+a:focus {
+	outline: 2px solid #069;
+	}
+a:link, a:visited, a:active {
+	color: #00c;
+	text-decoration: underline;
+	}
+a:hover {
+	color: #00f;
+	text-decoration: none;
+	}

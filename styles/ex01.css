@@ -1,0 +1,25 @@
+/* CSS styles for the jQuery exercise */
+
+.pushy {
+	width: 200px;
+	height: 200px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+    background: #036;
+    padding: 10px;
+}
+
+.fadeitem {
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.words {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+	margin-top: 80px;
+	padding: 0;
+}

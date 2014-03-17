@@ -1,0 +1,38 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 100%;
+	color: #000;
+	background: #fff;
+	}
+#states {
+	margin: 30px auto;
+	border-collapse: separate;
+	}
+th {
+	text-align: left;
+	padding: 4px 2px;
+	}
+.columnhead {
+	margin: 1px;
+	padding: 2px 30px;
+	background: #ccc;
+	text-transform: uppercase;
+	text-align: center;
+	}
+td {
+	padding: 4px 2px;
+	min-width: 14em;
+	}
+.highlight {
+	background: #fcc;
+	}
+.column-bar {
+	background: #ccf;
+	}

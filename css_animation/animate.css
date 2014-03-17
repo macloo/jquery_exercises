@@ -1,0 +1,39 @@
+/* CSS3 transitions, animations */
+/*
+  For more information: 
+  CSS transitions: Demos and more --
+  http://css3.bradshawenterprises.com/transitions/
+  http://dev.opera.com/articles/view/css3-vs-jquery-animations/ 
+*/
+
+body {
+	margin: 20px 30px;
+	font-family: Verdana, sans-serif;
+	font-size: 100%;
+	background: #fff;
+	color: #000;
+	}
+
+#apple {
+	width: 100px;
+	height: 100px;
+	transition:width 2s, height 2s;
+	/* Firefox */
+	-moz-transition: width 2s, height 2s, -moz-transform 2s; 
+	/* Safari and Chrome */
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+	/* Opera */
+	-o-transition: width 2s, height 2s, -o-transform 2s; 
+	}
+
+#apple:hover {
+	width: 350px;
+	height: 350px;
+	transform: rotate(360deg);
+	/* Firefox */
+	-moz-transform: rotate(360deg);
+	/* Safari and Chrome */ 
+	-webkit-transform: rotate(360deg); 
+	/* Opera */
+	-o-transform: rotate(360deg); 
+	}

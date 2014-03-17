@@ -1,0 +1,11 @@
+/* CSS styles for the jQuery exercise */
+
+body {
+	background: #000 url(../images/spacestars.jpg) repeat;
+}
+
+#rocket {
+    position: relative;
+    left: 50%;
+    top: 0;
+}

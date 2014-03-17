@@ -1,0 +1,9 @@
+/* CSS styles for the jQuery exercise */
+
+#viewer {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+}

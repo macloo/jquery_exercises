@@ -1,0 +1,52 @@
+/* CSS styles for the jQuery exercise */
+
+
+.name {
+	font-weight: bold;
+	}
+
+#wrapper {
+	padding-right: 20px;
+	}
+
+#footer {
+	clear: both;
+	}
+
+.left {
+	width: 60%;
+	float: left;
+	padding-top: 20px;
+	/* try un-commenting the line below - see what happens */
+	/* padding-bottom: 300px;  */
+	}
+
+.right {
+	width: 40%;
+	min-width: 300px;
+	float: right;
+	padding: 20px;
+	margin-top: 20px;
+	background: #f7dcea;
+	overflow: hidden;
+	}
+
+/* styles for sidebar */
+
+
+h3 {
+	font-size: .95em;
+	line-height: 1.5em;
+	padding-top: 10px;
+	}
+.right p {
+	font-size: .9em;
+	padding: 0;
+	padding-top: 10px;
+	line-height: 1.4em;
+	}
+.right img {
+	border: 1px solid #666;
+	display: block;
+	}
+
