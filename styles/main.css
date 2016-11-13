@@ -69,3 +69,13 @@ a:hover {
 	color: #00f;
 	text-decoration: none;
 	}
+
+@media (max-width: 800px) {
+	#wrapper {
+		margin: 0;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		overflow: hidden;
+	}
+}
