@@ -3,6 +3,7 @@
 
 .name {
 	font-weight: bold;
+	cursor: pointer;
 	}
 
 #wrapper {
@@ -11,6 +12,7 @@
 
 #footer {
 	clear: both;
+	margin-top: 20px;
 	}
 
 .left {
@@ -33,20 +35,63 @@
 
 /* styles for sidebar */
 
-
 h3 {
 	font-size: .95em;
 	line-height: 1.5em;
 	padding-top: 10px;
 	}
+
 .right p {
 	font-size: .9em;
 	padding: 0;
 	padding-top: 10px;
 	line-height: 1.4em;
 	}
+
 .right img {
 	border: 1px solid #666;
+	max-width: 100%;
 	display: block;
 	}
 
+/* lots of changes needed for mobile size */
+
+@media (min-width: 801px) and (max-width: 975px) {
+	.left { width: 50%; }
+	.right { width: 50%; }
+}
+@media (max-width: 800px) {
+	#wrapper {
+		padding-right: 0;
+	}
+	.left {
+		width: 100%;
+		float: none;
+		padding-top: 20px;
+	}
+	.right {
+		min-width: 100%;
+		width: 100%;
+		float: none;
+		padding: 20px 0;
+		margin-top: 20px;
+		background: #f7dcea;
+		overflow: hidden;
+	}
+	.right img {
+		border: 1px solid #666;
+		display: block;
+		width: 100%;
+	}
+	.right p {
+		font-size: 1em;
+		padding: 0 20px;
+		padding-top: 10px;
+		line-height: 1.4em;
+	}
+	h3 {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		padding: 10px 0 0 20px;
+	}
+}
