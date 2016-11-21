@@ -41,13 +41,14 @@ p {
 
 ul, ol {
 	margin-left: 40px;
+	padding-bottom: 1em;
 }
 li {
 	line-height: 1.4em;
 }
 .filelist {
 	float: right;
-	padding: 20px 20px;
+	padding: 20px 20px 20px 0;
 	margin: -60px 30px 10px 20px;
 	background: #f7dcea;
 	min-width: 100px;
@@ -77,5 +78,22 @@ a:hover {
 		padding-top: 20px;
 		padding-bottom: 30px;
 		overflow: hidden;
+	}
+}
+@media (max-width: 670px) {
+	.filelist {
+		float: none;
+		padding: 0;
+		margin: 0;
+		background: #cfebca;
+		min-width: 0;
+	}
+	ul {
+		background: #f7dcea;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 1em;
+		padding-left: 3em;
+		padding-top: 1em;
 	}
 }
