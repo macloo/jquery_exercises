@@ -1,19 +1,5 @@
 $(document).ready(function(){  // do not delete
-// ----------------------------------------------------------------------------
-// exercise based on Codecademy "Introducing jQuery" Part 2
-// http://www.codecademy.com/tracks/jquery
-// ----------------------------------------------------------------------------
 // EXERCISE 2
-// In the HTML file, first look at the whole page to see the layout.
-// Then click the first image on the page. Click each one in turn until
-// all are gone.
-// Come back here and study the jQuery code.
-// 1. Look at the CSS file. Go to the HTML file, add the ID "viewer" to the
-//    DIV holding the four photos. Reload and look at the whole page again.
-//    Click each image. Figure out how/why this works.
-// 2. Can you add something in the jQuery to make each hidden photo reappear
-//    at the end of the queue? This would make the slideshow never-ending.
-// ----------------------------------------------------------------------------
 
 // this part is to resize the "viewer" div for mobile only
 // it works for images with a 4:3 aspect ratio
@@ -23,7 +9,7 @@ if (viewerWidth < 800) {
 }
 
 // this adjusts the height of the "viewer" div dynamically as the user
-// resizes the browser window 
+// resizes the browser window
 $( window ).resize(function() {
 	var viewerWidth = $( '#viewer' ).width();
 	if (viewerWidth < 800) {
@@ -32,12 +18,12 @@ $( window ).resize(function() {
 });
 
 // this makes the clicked image fade out and hide
+// also, the faded image is moved with .append() to the end of the queue
 $('.fadeitem').on('click', function() {
-	$(this).fadeOut('slow');
+	$(this).fadeOut('slow', function() {
+		$('#viewer').append(this);
+		$(this).fadeIn('fast');
+	});
 });
 
-
-
-
-// ----------------------------------------------------------------------------
 }); // do not delete
