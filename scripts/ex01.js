@@ -1,12 +1,10 @@
-$(document).ready(function(){  // do not delete 
+$(document).ready(function(){  // do not delete
 // ----------------------------------------------------------------------------
-// exercise based on Codecademy "Introducing jQuery" Part 1
-// http://www.codecademy.com/tracks/jquery
-// ----------------------------------------------------------------------------
-// EXERCISE 1
-// In the HTML file, replace the DIV that has class "fadeitem" with 
-// any Vancouver image from the /images/ folder. Get the image to 
-// fade in/out exactly like the circular DIV does.
+// Learn to use jQuery:
+//    .mouseenter
+//    .mouseleave
+//    .css('opacity', '0.25')
+//    .fadeTo()
 // ----------------------------------------------------------------------------
 
 

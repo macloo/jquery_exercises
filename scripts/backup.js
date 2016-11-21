@@ -16,10 +16,26 @@ $(document).ready(function(){  // do not delete
 $('.box').hide(); // hides all elements with class '.box' 
 
 
-
-$('h2').on('click', function() {
-	$(this).next('.box').slideToggle();
+// script for box 1 
+$('#b1').on('click', function() {
+	$('.one').toggle();
 });
+
+// script for box 2 
+$('#b2').on('click', function() {
+	$('.two').slideToggle('fast');
+});
+
+// script for box 3 
+$('#b3').on('click', function() {
+	$('.three').toggle();
+});
+
+// script for box 4 
+$('#b4').on('click', function() {
+	$('.four').fadeToggle();
+});
+ 
 
 
 // ----------------------------------------------------------------------------

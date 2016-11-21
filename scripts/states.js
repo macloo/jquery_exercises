@@ -14,11 +14,11 @@ $(document).ready(function(){
 $('#states tr:odd').addClass('highlight');
 
 
-$('#states tr').find('td:first').addClass('column-bar');
-$('#states tr').find('td:first span').hide();
+$('#states tr').find('td').addClass('column-bar');
+$('#states tr').find('td span').hide();
 
 
-$('#states tr').on('mouseenter mouseleave', 'td:first', function(e){
+$('#states tr').on('mouseenter mouseleave', 'td', function(e){
 	$(this).toggleClass('column-bar');
 	$(this).find('span').toggle();
 });

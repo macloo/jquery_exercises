@@ -1,7 +1,7 @@
-$(document).ready(function(){  // do not delete 
+$(document).ready(function(){  // do not delete
 // ----------------------------------------------------------------------------
 // EXERCISE 3
-// In the HTML file, first look at the code to see what has been hidden 
+// In the HTML file, first look at the code to see what has been hidden
 // with this jQuery.
 // Then figure out how to make the appropriate character appear when we
 // hover on his or her name in the main text.

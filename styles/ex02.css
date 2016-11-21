@@ -1,9 +1,20 @@
 /* CSS styles for the jQuery exercise */
 
+img { max-width: 100%; }
+
 #viewer {
 	width: 800px;
+	max-width: 100%;
 	height: 600px;
 	margin: auto;
 	margin-bottom: 20px;
 	overflow: hidden;
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	#viewer {
+		width: 100%;
+	}
+	/* the height for mobile is handled by the jQuery */
 }
