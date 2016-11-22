@@ -22,6 +22,7 @@ $( window ).resize(function() {
 // to make the slideshow endless
 $('.fadeitem').on('click', function() {
 	$(this).fadeOut('slow', function() {
+		// move it to the end of the stack of photos
 		$('#viewer').append(this);
 		// make it visible again
 		$(this).fadeIn('fast');
