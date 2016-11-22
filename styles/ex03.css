@@ -93,5 +93,9 @@ h3 {
 		font-size: 1.2em;
 		line-height: 1.5em;
 		padding: 10px 0 0 20px;
+		background: #f7dcea;
+	}
+	.character p {
+		background: #f7dcea;
 	}
 }
