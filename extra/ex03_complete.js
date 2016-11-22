@@ -1,6 +1,6 @@
 $(document).ready(function(){  // do not delete
 // EXERCISE 3
-// Hint: From Code School, do you remember this?
+// Hint: From Code School's jQuery course, do you remember this?
 // var amount = $(this).closest('.vacation').data('price');
 
 
@@ -11,11 +11,18 @@ var sita = $('#sita');
 var hanuman = $('#hanuman');
 var ravana = $('#ravana');
 var lakshmana = $('#lakshmana');
-var person = "";
 
 // hide all the character DIVs
 $('.character').hide();
 
+// get the width of the browser
+var winWidth = $( window ).width();
+
+if ( winWidth < 800 ) {
+    $('.right').prepend("<p>Click a character's name above to learn more.</p>");
+} else {
+    $('.right').prepend("<p>Roll over a character's name at left to learn more.</p>");
+}
 
 // handles the data attributes, which are inside tags in the HTML
 // like this:  data-person="#rama"
@@ -23,27 +30,25 @@ $('.character').hide();
 // so when you hover on a span, jQuery grabs the data attribute for person
 // and toggles (shows) the associated DIV, using the variable defined above
 $('.name').hover(function() {
-	person = $(this).closest('span').data('person');
-	$(person).toggle();
+	if ( winWidth >= 800 ) {
+		var person = $(this).closest('span').data('person');
+		$(person).toggle();
+	}
 });
 
-
-// this part is to resize the "viewer" div for mobile only
-var winWidth = $( window ).width();
-if ( winWidth < 800 ) {
-    $('.right').prepend("<p>Click a character's name above to learn more.</p>");
-} else {
-    $('.right').prepend("<p>Roll over a character's name at left to learn more.</p>");
-}
+// this is for smaller screens - click instead of hover
+// it does something similar to the above function
+// but displays the character above the name you clicked
 $('.name').click(function() {
 	if ( winWidth < 800 ) {
-		person = $(this).closest('span').data('person');
+		$('.character').hide();
+		var person = $(this).closest('span').data('person');
 		$(person).show().prependTo( $(this).parent() );
 	}
 });
 $('.character').click(function() {
 	if ( winWidth < 800 ) {
-		$(person).hide();
+		$(this).appendTo( $('#sidebar')).hide();
 	}
 });
 

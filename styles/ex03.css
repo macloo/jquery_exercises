@@ -1,5 +1,4 @@
-/* CSS styles for the jQuery exercise */
-
+/* CSS styles for Ramayana exercise */
 
 .name {
 	font-weight: bold;
@@ -8,6 +7,7 @@
 
 #wrapper {
 	padding-right: 20px;
+	position: relative;
 	}
 
 #footer {
@@ -60,6 +60,7 @@ h3 {
 	.left { width: 50%; }
 	.right { width: 50%; }
 }
+
 @media (max-width: 800px) {
 	#wrapper {
 		padding-right: 0;
@@ -70,26 +71,15 @@ h3 {
 		padding-top: 20px;
 	}
 	.right {
-		min-width: 100%;
 		width: 100%;
+		min-width: 100%;
 		float: none;
 		padding: 20px 0;
 		margin-top: 20px;
 		background: #f7dcea;
 		overflow: hidden;
 	}
-	.right img {
-		border: 1px solid #666;
-		display: block;
-		width: 100%;
-	}
-	.right p {
-		font-size: 1em;
-		padding: 0 20px;
-		padding-top: 10px;
-		line-height: 1.4em;
-	}
-	h3 {
+	.character h3 {
 		font-size: 1.2em;
 		line-height: 1.5em;
 		padding: 10px 0 0 20px;
@@ -97,5 +87,11 @@ h3 {
 	}
 	.character p {
 		background: #f7dcea;
+		font-size: 1em;
+		padding: 20px 20px;
+		line-height: 1.4em;
+	}
+	.character img {
+		max-width: 100%;
 	}
 }
