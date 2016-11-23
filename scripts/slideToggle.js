@@ -1,20 +1,12 @@
-$(document).ready(function(){  // do not delete 
+$(document).ready(function(){  // do not delete
 // ----------------------------------------------------------------------------
-// Step 1:
-//   Load the HTML in your browser, click all the gray bars, and 
-//   notice the differences among them.
-// Step 2: 
-//   Here in the JS/jQuery, change ALL boxes to slideToggle at the 
-//   Test it in your browser.
-// Step 3:
-//   Can you do exactly the same thing with ONE function instead of FOUR? 
-//   Now that all four work the same way, can you control all with a 
-//   single function?
+// using the DOM:
+// when you click any h2 element, the next element (after it) that has
+// the class "box" will slide open or closed
+// in this version, all paragraphs may be open at the same time
 // ----------------------------------------------------------------------------
 
-
-$('.box').hide(); // hides all elements with class '.box' 
-
+$('.box').hide(); // hides all elements with class '.box'
 
 
 $('h2').on('click', function() {
@@ -23,4 +15,4 @@ $('h2').on('click', function() {
 
 
 // ----------------------------------------------------------------------------
-}); // do not delete 
+}); // do not delete
