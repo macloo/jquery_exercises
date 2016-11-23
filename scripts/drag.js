@@ -4,16 +4,17 @@
 $(document).ready(function() {
 // ---------------------------------------------------------------------------
 // EXERCISE
-// 1. Try the HTML page as is. Drag the box! 
-// 2. Make a second div on the HTML page and find out whether it can also 
-//    be dragged. 
-// 3. What if you want to make two divs that are each a different color? 
+// 1. Try the HTML page as is. Drag the box!
+// 2. Make a second div on the HTML page and find out whether it can also
+//    be dragged.
+// 3. What if you want to make two divs that are each a different color?
 //    How would you change the code? Would you change the JS or the CSS?
 // ---------------------------------------------------------------------------
 
-    // $dragging is only a variable, could be $apple
+    // $dragging is only a variable, could be $apple or $foobar
     var $dragging = null;
 
+    // make the dragging happen as the mouse moves 
     $(document).on('mousemove', function(e) {
     // NOTE e here stands for event; the position updates as the mouse moves
         if ($dragging) {
@@ -27,15 +28,16 @@ $(document).ready(function() {
         }
     });
 
-
+    // when you click and hold on the square
     $(document).on('mousedown', '.dragger', function(e) {
     	// value of $dragging becomes the div that you clicked
         $dragging = $(e.target);
     });
 
+    // when you release the mouse button on the square
     $(document).on('mouseup', function(e) {
         $dragging = null;
     });
 
-// ---------------------------
+// -------------------------------------------------------------------------
 }); // do not delete
