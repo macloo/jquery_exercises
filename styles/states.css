@@ -11,6 +11,16 @@ body {
 	color: #000;
 	background: #fff;
 	}
+#wrapper {
+	width: 80%;
+	margin: 20px auto;
+	padding: 30px 40px;
+	background: #ccf;
+	}
+
+p { padding-top: 10px; }
+
+/* the whole table */
 #states {
 	margin: 30px auto;
 	border-collapse: separate;
@@ -30,9 +40,31 @@ td {
 	padding: 4px 2px;
 	min-width: 14em;
 	}
+
+/* the two classes below are applied selectively by the jQuery code */
 .highlight {
-	background: #fcc;
+	background: #fcc; /* pink */
 	}
 .column-bar {
-	background: #ccf;
+	background: #ccf; /* blue */
+	}
+
+@media (max-width: 800px) {
+	#wrapper {
+		width: 100%;
+		margin: 0;
+		padding: 30px 20px;
+		overflow: auto;
+		}
+	#states {
+		margin: 0;
+	}
+	.choice {
+		width: 100%;
+		padding: 10px;
+		margin-top: 3px;
+		background: #ccc;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
 	}
